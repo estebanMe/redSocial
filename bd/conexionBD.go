@@ -6,12 +6,11 @@ import (
 	"context"
 
 	"go.mongodb.org/mongo-driver/mongo"
-	"go.mongodb.org/mongo-driver/mongo/options"
 )
 
 // MongoCN es mi objeto de conexión
 var MongoCN  = ConectarBD()
-var clientOptions = options.Client().ApplyURI("mongodb+srv://moken:951moken951@twitter.fcjvm.mongodb.net/test?retryWrites=true&w=majority");
+
                                            
 // ConectarBD es la funcion que me permite conectar la base de datos
 func ConectarBD() *mongo.Client {
