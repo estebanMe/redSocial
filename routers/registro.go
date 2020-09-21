@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
+	"github.com/estebanMe/redSocial/bd"
 	"github.com/estebanMe/redSocial/models"
 )
 
