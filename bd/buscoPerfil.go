@@ -34,5 +34,6 @@ func BuscoPerfil(ID string) (models.Usuario, error) {
 		fmt.Println("Registro no encontrado "+err.Error())
 		return perfil, err
 	}
+	fmt.Println("Perfil encontrado por id: ", perfil)
 	return perfil, nil
 }

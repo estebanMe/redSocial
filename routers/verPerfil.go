@@ -12,7 +12,7 @@ func VerPerfil(w http.ResponseWriter, r *http.Request) {
    ID := r.URL.Query().Get("id")
 
    if len(ID) < 1 {
-	   http.Error(w, "deve enviar el parámetro ID", http.StatusBadRequest)
+	   http.Error(w, "debe enviar el parámetro ID", http.StatusBadRequest)
 	   return
    }
 
